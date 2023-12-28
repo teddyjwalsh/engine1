@@ -24,10 +24,10 @@ struct ComponentSet
     struct Component
     {
     private:
-        EntityId entity_id;
         ArraysType* arrays;
 
     public:
+        EntityId entity_id;
         C cmp;
         Component(EntityId in_id, ArraysType& in_arrays):
             entity_id(in_id),
