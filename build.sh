@@ -1,1 +1,2 @@
-g++ main.cpp -std=c++2a -I./glm
+g++ main.cpp -std=c++2a -I./glm -ggdb
+

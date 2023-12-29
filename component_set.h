@@ -17,7 +17,6 @@ struct ComponentSet
     struct Array;
 
     using ArraysType = std::tuple<Array<Types>...>;
-    ArraysType arrays;
     EntityId id_counter = 0;
 
     template <typename C>
@@ -86,6 +85,8 @@ struct ComponentSet
             component_to_entity.erase(idx);
         }
     };
+
+    ArraysType arrays;
 
     template <typename... EntityTypes>
     EntityId add_entity()

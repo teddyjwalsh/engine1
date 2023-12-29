@@ -13,6 +13,7 @@ void add_time_system(SysSet& sys)
         for (auto& ac : aarray)
         {
             ac->t += dt;
+            logger.out_log << "t: " << ac->t << std::endl;
         }
     });
 }
